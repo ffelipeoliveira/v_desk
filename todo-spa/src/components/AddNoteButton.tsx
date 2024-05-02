@@ -1,11 +1,6 @@
+import { useEffect } from 'react';
 import '../assets/css/AddNoteButton.css'
 import AddIcon from '../assets/icons/AddIcon';
-
-function Remove(el,toDoCounter) {
-    const child = el
-    child.remove();
-    return(toDoCounter--)
-}
 
 function AddNoteButton() {
     let toDoCounter = 0;
@@ -22,7 +17,7 @@ function AddNoteButton() {
                                 <input id = input' + toDoCounter + ' placeholder = "Tarefa ' + toDoCounter + '")"> \
                                 </input> \
                             </form> \
-                            <button class = "close" onclick = "Remove(this,'+ toDoCounter +')"> \
+                            <button class = "close" onclick = "remove(this)"> \
                                 X \
                             </button> \
                             </div> \
@@ -36,6 +31,14 @@ function AddNoteButton() {
             
        } 
     }
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.appendChild( document.createTextNode('function remove(el){el.parentElement.parentElement.remove();}'));
+        script.async = true;
+        return () => {
+            document.head.appendChild(script);
+        }
+    },[]);
 
     return (
         <button id="Add" onClick={addNote}>
