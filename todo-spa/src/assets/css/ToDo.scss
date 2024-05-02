@@ -1,0 +1,54 @@
+.ToDo {
+    background-color: var(--main-nav-color);
+    margin: 1em;
+    width: 15vw;
+    height: 20vw;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    transition: .5s ease;
+    div {
+        display: flex;
+        align-items: center;
+    }
+    button {
+        width: 3vw;
+        margin-left: 3px;
+        background-color: transparent;
+        color: var(--main-text-color);
+        border: 0;
+        &:hover {
+            background-color: #ffffff2f;
+        }
+    }
+    input {
+        width: 12vw;
+
+        border: none;
+        border-bottom: 2px solid var(--main-text-color);
+        border-radius: 3px;
+        outline: none !important;
+
+        background-color: transparent;
+        color: var(--main-text-color);
+        transition: .5s;
+        
+        &:focus {
+            background-color: var(--main-bg-color);
+            border: 1px solid var(--main-text-color);
+            transition: .5s;
+        }
+    }
+    .input {
+        outline: none !important;
+        margin: 10px;
+
+        display: inline-block;
+        overflow-x: scroll;
+        text-overflow: ellipsis;
+
+        width: 90%;
+        height: 80%;
+        max-width: 90% !important;
+    }
+}

@@ -1,0 +1,28 @@
+#Add {
+  width: 5em;
+  height: 5em;
+  position: fixed;
+  bottom: 7vh;
+  right: 7vw;
+  border: none;
+  border-radius: 90%;
+  background-color: var(--main-nav-color);
+  color: var(--main-text-color);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px;
+  transition: 0.5s ease;
+}
+#Add svg {
+  margin-top: 0.2em;
+}
+#Add:hover {
+  background: linear-gradient(0deg, var(--origin-color), var(--end-color));
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  #Add {
+    width: 5.5em;
+    height: 5.5em;
+  }
+}/*# sourceMappingURL=AddNoteButton.css.map */

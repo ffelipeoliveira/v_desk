@@ -1,0 +1,55 @@
+.animation-wrapper {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 9;
+}
+
+.hitbox {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  width: 120px;
+  height: 120px;
+}
+
+.animation {
+  position: relative;
+  z-index: 8;
+  pointer-events: none;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  background-image: url("../../images/spritesheet.png");
+  background-size: 2300%, 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  animation-name: fill;
+  animation-duration: 1s;
+  animation-timing-function: steps(22);
+  animation-iteration-count: infinite;
+  animation-play-state: inherit;
+}
+@keyframes fill {
+  from {
+    background-position: left;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+.idle {
+  background-image: url(../../images/1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.paused {
+  animation-play-state: paused;
+}/*# sourceMappingURL=Animation.css.map */

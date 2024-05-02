@@ -1,0 +1,14 @@
+:root {
+    --origin-color: #29ff22;
+    --end-color: #1900ff;
+    --main-nav-color: #1a1a1a;
+    --main-bg-color: #383838;
+    --main-text-color: #e4e4e4;
+}
+
+.V {
+    background: linear-gradient(0deg, var( --origin-color), var(--end-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,72 @@
+header {
+  width: 98vw;
+  height: 3vh;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  background-color: var(--main-nav-color);
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  max-width: 100vw !important;
+  max-height: 100vh !important;
+  overflow: hidden;
+}
+header .Home {
+  display: flex;
+}
+header ul {
+  list-style-type: none;
+  display: flex;
+}
+header svg {
+  height: 3vh;
+  stroke: var(--main-text-color);
+  margin-top: 0.5vh;
+  margin-left: 1vh;
+}
+header svg path {
+  transition: 0.2s ease;
+  fill: transparent;
+}
+header svg:hover path {
+  fill: var(--main-text-color);
+  stroke: var(--main-nav-color);
+  transition: 0.2s ease;
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 4vh;
+    width: 99vw;
+    padding: 0.5vw;
+  }
+  header svg {
+    width: 6vw;
+    height: auto;
+    fill: var(--main-text-color);
+  }
+  header .Info {
+    display: none;
+  }
+}
+@media only screen and (max-height: 600px) {
+  header {
+    background-color: transparent;
+    height: 6vh;
+    width: 98vw;
+    padding-top: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  header svg {
+    margin-top: 1vh;
+    width: auto;
+    height: 6vh;
+    fill: var(--main-text-color);
+  }
+  header .Info {
+    display: none;
+  }
+}/*# sourceMappingURL=Navbar.css.map */
